@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex">
+    <title>Title</title>
+</head>
+<body class="body">
+	<div class="time_block">
+		<span class="button" id="get_time">get time from server starts</span>
+		<span class="time_block_content"></span>
+	</div>
+	<div class="api_event_block">
+		<span class="button api_event_button">info:critical</span>
+		<span class="button api_event_button">critical</span>
+		<span class="button api_event_button">info</span>
+		<span class="button api_event_button">incorrect</span>
+		<form id="events_form">
+			How many events are on page: <input type="number" value="5" min="1" max="10000" name="eventsOnPage"><br>
+			Number of page: <input type="number" value="1" min="1" max="10000" name="numberOfPage"><br>
+			write types with ':' <br>
+			<input type="text" name="types" value='info:critical'><br>
+			<input id="form_submit" type="submit" value="get events">
+		</form>
+		<div class="api_events_content"></div>
+	</div>
+</body>
+</html>
