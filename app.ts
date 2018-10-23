@@ -1,6 +1,6 @@
 var json = require('./events.json');
 var events = json.events;
-import { Router, Request, Response } from 'express';
+import { Request, Response } from 'express';
 
 var typesSet = new Set()
 events.forEach(function(event : any){
