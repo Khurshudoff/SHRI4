@@ -1,6 +1,6 @@
 import * as _ from 'lodash';
 import './style.sass';
-import * as $ from 'jquery/dist/jquery';
+import $ from 'jquery';
 
 $('#get_time').on('click', (event : Event) => {
 	event.preventDefault();
